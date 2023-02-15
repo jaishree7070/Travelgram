@@ -1,0 +1,30 @@
+const mongoose = require('mongoose');
+
+const Schema = mongoose.Schema;
+//schema is the blue print of the documents in the collections we store
+
+
+const placeSchema = new Schema({
+    title: {
+        type: String, required: true
+    },
+    description: {
+        type: String, required: true
+    },
+    image: {
+        type: String, required: true
+    },
+    address: {
+        type: String, required: true
+    },
+    location: {
+        lat: { type: String, required: true },
+        lng: { type: String, required: true }
+    },
+    creator: {
+        type: mongoose.Types.ObjectId, required: true ,ref:'User'
+    }
+});
+
+module.exports = mongoose.model('Place', placeSchema);
+//Place will be plural and it will be the name of the collection

@@ -1,0 +1,9 @@
+{
+  "env": {
+    "DB_USER": "Jaishree",
+    "DB_PASSWORD": "3ViAXgv5A5VGxQB",
+    "DB_NAME": "Travelgram",
+    "JWT_KEY": "travelgram_secretkey",
+    "GOOGLE_API_KEY": "pk.0649bd3dde770eebdf648d9cd5601ad7"
+  }
+}
